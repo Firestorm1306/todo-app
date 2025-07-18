@@ -1,0 +1,192 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(to right,#123458,#030303);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+#todo-form{
+    height:35rem;
+    width: 30rem;
+    background: linear-gradient(to right,#D4C9BE,#F1EFEC);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0 0 25px 25px;
+    transition: box-shadow 0.25s ease, width 0.5s ease,height 0.5s ease;
+    margin-bottom: 20px;
+}
+#todo-form:hover{
+    box-shadow: 0 0 15px rgba(16, 127, 239, 0.5);
+    width: 31rem;
+    height: 36rem;
+}
+
+h1{
+    align-self: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#totals{
+    justify-content: space-evenly;
+}
+.details{
+    display: flex;
+}
+.items{
+    padding: 10px;
+    width: 30%;
+    border: solid 2px;
+    border-radius: 0.75rem;
+    margin-left: 0.25rem;
+    background-color: #AEA4BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.inputs{
+    width: 55%;
+    border-radius: 0.75rem;
+    box-shadow: 1rem;
+    margin-left: 1rem;
+    border: solid 2px;
+    box-shadow: 1px 1px 5px black;
+    background-color: #CDCDCD;
+    padding-left: 0.5rem;
+}
+.inputs:hover{
+    box-shadow:2px 2px 5px black;
+    transition: smooth;
+}
+table{
+    border: solid 3px;
+    width: 100%;
+    background-color: #AEA4BF;
+    border-collapse: collapse;
+}
+th,td{
+    border: 3px,solid black;
+    height: 2rem;
+    width: 7rem;
+    text-align: center;
+    vertical-align: middle;
+}
+#operations{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+button{
+    background-color: #D4C9BE;
+    height: 2rem;
+    width: 7rem;
+    box-shadow: 2px 2px 5px black;
+    transition: all 0.5s ease;
+}
+button:hover{
+    box-shadow: 2px 2px 5px rgb(16, 14, 14);
+    cursor: pointer;
+    height: 2.2rem;
+    width: 7.2rem;
+}
+button:active{
+    background-color: #AEA4BF;
+}
+p{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.subRecord{
+    display: flex;
+    background: linear-gradient(to right,#D4C9BE,#F1EFEC);
+    height: 1.5rem;
+    width: 11rem;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+
+}
+#id{
+    display: flex;
+    align-items: center;
+}
+.row1{
+    background-color: #1b4f86;
+}
+.hand{
+    cursor: pointer;
+    padding: 7.5px;
+}
+td input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.desc{
+    height: 2.75rem;
+}
+.highlight{
+    background-color: rgb(152, 152, 247);
+}
+.red{
+    background-color: rgb(232, 86, 86);
+}
+.searchBar{
+    height: 2rem;
+    width: 20rem;
+    margin: 1rem;
+    margin-top: 0.45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchBox{
+    width: 100%;
+}
+.search-box{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.sIcon{
+    margin-left: 2rem;
+    cursor: pointer;
+}
+#name-error, #desc-error, #date-error{
+    color: rgb(132, 14, 14);
+}
+.searchIcon{
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+    margin-left: 1rem;
+}
+.searchIcon:hover{
+    background-color: #9a9898;
+
+}
+#Add, .total{
+    border-radius: 10px 0 0 10px;
+}
+#sortName, .unmarked{
+    border-radius: 0 10px 10px 0;
+}
+#task-list tr {
+    transition: opacity 0.4s ease,background-color 0.5s ease;
+}
+.fade-out {
+    opacity: 0;
+}

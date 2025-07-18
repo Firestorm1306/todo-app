@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="todo-form">
+        <h1>To Do App</h1>
+        <div class="details">
+        <label for="" class="items">Id</label>
+        <label id ="id" type="text" class="inputs">
+        </div>
+        <div class="details">    
+        <label for="" class="items">Name</label>
+        <input id="name" type="text" placeholder="Type Name Here" class="inputs">
+        <span id="name-error"></span>
+        </div>
+        <div class="details desc">
+            <label for="" class="items">Description</label>
+            <textarea id="desc" rows="5" cols="30" class="inputs"></textarea>
+            <span id="desc-error"></span>
+        </div>
+        <div class="details">
+            <label for="" class="items">Date</label>
+            <input id="date" type="date" class="inputs">
+            <span id="date-error"></span>
+        </div>
+        <div class="details">
+            <label for="" class="items">Time</label>
+            <input id="time" type="time" class="inputs">
+        </div>
+        <div class="details">
+            <label for="" class="items">Photo</label>
+            <input id="photo" type="url" class="inputs">
+        </div>
+    </div>
+    <div id="totals">
+        <p><span class="subRecord total">Total Records:<span id="total">0</span></span><span class="subRecord">Marked Records:<span id="marked">0</span></span><span class="subRecord unmarked"> Unmarked Records: <span id="unmarked">0</span></span></p>
+    </div>
+    <div id="operations">
+        <button id="Add">Add</button>
+        <button id="Delete" disabled>Delete</button>
+        <button id="Update" disabled>Update</button>
+        <button id="Search">Search</button>
+        <button id="Save">Save</button>
+        <button id="Clear">Clear All</button>
+        <button id="sortName">Sort By Name</button>
+    </div>
+    <div class="searchBar">
+        <span id="SearchBox"></span><span id="searchIcon"></span>
+    </div>
+    <div id="records">
+        <table>
+            <thead>
+                <tr>
+                    <th class="row1">Id</th>
+                    <th class="row1">Name</th>   
+                    <th class="row1">Desc</th>
+                    <th class="row1">Date</th>
+                    <th class="row1">Time</th>
+                    <th class="row1">Photo</th>
+                    <th class="row1">Operations</th>
+                </tr>
+            </thead>
+            <tbody id="task-list">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="controller.js" type="module" ></script>
+</body>
+</html>
