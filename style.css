@@ -21,8 +21,6 @@ body{
 }
 #todo-form:hover{
     box-shadow: 0 0 15px rgba(16, 127, 239, 0.5);
-    width: 31rem;
-    height: 36rem;
 }
 
 h1{
@@ -189,4 +187,36 @@ td input {
 }
 .fade-out {
     opacity: 0;
+}
+@media(max-width:871px){
+    #todo-form{
+        width: 100%;
+        border-radius: 0;
+    }
+    body{
+        background: #123458;
+    }
+    .total, .marked, .unmarked {
+        width: 6rem;
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+    .table-wrapper {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .inputs{
+        width: 50%;
+        margin-left: 25px;
+    }
+    #Add, .total{
+    border-radius: 0;
+    }
+    #sortName, .unmarked{
+    border-radius: 0;
+    }
+    .unmarked{
+        font-size: 10px;
+    }
+
 }
